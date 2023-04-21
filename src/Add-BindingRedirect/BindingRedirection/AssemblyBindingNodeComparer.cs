@@ -13,7 +13,8 @@ namespace Add_BindingRedirect.BindingRedirection
         public AssemblyBindingNodeComparer()
         {
             _nsm = new XmlNamespaceManager(new NameTable());
-            _nsm.AddNamespace("asm", "urn:schemas-microsoft-com:asm.v1");
+            //Enable this if needed. In our projects these where just disturbing
+            //_nsm.AddNamespace("asm", "urn:schemas-microsoft-com:asm.v1");
         }
 
         public int Compare(XElement x, XElement y)
